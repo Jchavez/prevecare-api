@@ -1,0 +1,35 @@
+{
+  "name": "ejercicios",
+  "plural": "ejercicios",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "asociado_id": {
+      "type": "number"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "cantidad": {
+      "type": "number"
+    },
+    "tiempo": {
+      "type": "number",
+      "required": true
+    },
+    "distancia": {
+      "type": "number",
+      "required": true
+    },
+    "tipo": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
