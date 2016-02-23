@@ -47,32 +47,6 @@
             "description": "User not found"
           }
         }
-      },
-      "post": {
-        "tags": [
-          "ejercicio"
-        ],
-        "summary": "Creates Exercise",
-        "description": "",
-        "operationId": "createExercise",
-        "produces": [
-          "application/xml",
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "data",
-            "description": "Create exercise",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "default": {
-            "description": "successful operation"
-          }
-        }
       }
     }
   },
