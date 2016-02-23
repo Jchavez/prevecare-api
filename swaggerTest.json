@@ -3,7 +3,7 @@
   "info": {
     "description": "This is a sample server Prevecare API",
     "version": "1.0.0",
-    "title": "Swagger Petstore",
+    "title": "Swagger Prevecare API",
     "contact": {
       "email": "jchavezlopez9@gmail.com"
     },
@@ -17,11 +17,7 @@
   "tags": [
     {
       "name": "ejercicios",
-      "description": "Everything about your Pets",
-      "externalDocs": {
-        "description": "Find out more",
-        "url": "http://swagger.io"
-      }
+      "description": "Everything about Exercises"
     }
   ],
   "schemes": [
@@ -140,7 +136,7 @@
     }
   },
   "definitions": {
-    "Pet": {
+    "Ejercicios": {
       "type": "object",
       "required": [
         "name",
