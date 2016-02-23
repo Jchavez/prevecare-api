@@ -8,13 +8,16 @@
   },
   "properties": {
     "asociado_id": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "fecha": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "cantidad": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "tiempo": {
       "type": "number",
@@ -25,7 +28,7 @@
       "required": true
     },
     "tipo": {
-      "type": "number"
+      "type": "string"
     }
   },
   "validations": [],

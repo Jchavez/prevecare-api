@@ -1,0 +1,128 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a sample server Prevecare API",
+    "version": "1.0.0",
+    "title": "Swagger Prevecare API",
+    "contact": {
+      "email": "jchavezlopez9@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "localhost",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "ejercicio",
+      "description": "Todo sobre ejercicios"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/ejercicios": {
+      "get": {
+        "tags": [
+          "ejercicio"
+        ],
+        "summary": "Get Exercises",
+        "description": "Get All exercises",
+        "operationId": "fetchAllExercises",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid username supplied"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ejercicio"
+        ],
+        "summary": "Creates Exercise",
+        "description": "",
+        "operationId": "createExercise",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "data",
+            "description": "Create exercise",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Ejercicio": {
+      "type": "object",
+      "required": [
+        "asociado_id",
+        "fecha",
+        "cantidad",
+        "tiempo",
+        "distancia"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "asociado_id": {
+          "type": "integer",
+          "example": "int64"
+        },
+        "fecha": {
+          "type": "string",
+          "description": "Date"
+        },
+        "cantidad": {
+          "type": "integer",
+          "description": "int64"
+        },
+        "tiempo": {
+          "type": "integer",
+          "description": "int64"
+        },
+        "distancia": {
+          "type": "integer",
+          "description": "int64"
+        },
+        "tipo": {
+          "type": "string",
+          "description": "type",
+          "enum": [
+            "W",
+            "R"
+          ]
+        }
+      },
+      "xml": {
+        "name": "Ejercicio"
+      }
+    }
+  }
+}
