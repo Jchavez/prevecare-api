@@ -17,7 +17,7 @@
   "tags": [
     {
       "name": "ejercicios",
-      "description": "Everything about Exercises"
+      "description": "Todo acerca ejercicios"
     }
   ],
   "schemes": [
@@ -139,7 +139,7 @@
     "Ejercicios": {
       "type": "object",
       "required": [
-        "name",
+        "asociado_id",
         "photoUrls"
       ],
       "properties": {
@@ -147,40 +147,32 @@
           "type": "integer",
           "format": "int64"
         },
-        "category": {
-          "$ref": "#/definitions/Category"
+        "asociado_id": {
+          "type": "integer",
+          "format": "int64"
         },
-        "name": {
+        "fecha": {
           "type": "string",
-          "example": "doggie"
+          "example": "2016-02-23"
         },
-        "photoUrls": {
-          "type": "array",
-          "xml": {
-            "name": "photoUrl",
-            "wrapped": true
-          },
-          "items": {
-            "type": "string"
-          }
+        "cantidad": {
+          "type": "integer",
+          "format": "int64"
         },
-        "tags": {
-          "type": "array",
-          "xml": {
-            "name": "tag",
-            "wrapped": true
-          },
-          "items": {
-            "$ref": "#/definitions/Tag"
-          }
+        "tiempo": {
+          "type": "integer",
+          "format": "int64"
         },
-        "status": {
+        "distancia": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "tipo": {
           "type": "string",
-          "description": "pet status in the store",
+          "description": "tipo",
           "enum": [
-            "available",
-            "pending",
-            "sold"
+            "W",
+            "R"
           ]
         }
       },
