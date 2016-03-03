@@ -24,36 +24,6 @@
     "http"
   ],
   "paths": {
-    "/ejercicios": {
-      "post": {
-        "tags": [
-          "ejercicios"
-        ],
-        "summary": "Agregar un nuevo ejercicio",
-        "description": "",
-        "consumes": [
-          "application/json",
-          "application/xml"
-        ],
-        "produces": [
-          "application/xml",
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "description": "json",
-            "required": true
-          }
-        ],
-        "responses": {
-          "405": {
-            "description": "Invalid input"
-          }
-        }
-      }
-    },
     "/asociados/{asociadoId}/ejercicios": {
       "get": {
         "tags": [
