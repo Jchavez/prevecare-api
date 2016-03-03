@@ -125,14 +125,6 @@
     },
     "Ejercicios": {
       "type": "object",
-      "required": [
-        "asociadoId",
-        "fecha",
-        "cantidad",
-        "tiempo",
-        "distancia",
-        "tipo"
-      ],
       "properties": {
         "ejercicioId": {
           "type": "integer",
